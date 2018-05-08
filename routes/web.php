@@ -57,3 +57,4 @@ Route::group(['middleware' => 'auth', 'prefix' => '/admin'], function() {
 
 Route::get('/', 'TorneiController@index');
 Route::post('/store', 'TorneiController@storeData')->name('subscriber.store');
+
