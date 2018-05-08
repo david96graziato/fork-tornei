@@ -58,7 +58,7 @@ class TorneiController extends Controller {
 
         $subscriber->save();
 
-        Mail::to($subscriber->email)->send(new SubscriberConfirmation($subscriber));
+        //Mail::to($subscriber->email)->send(new SubscriberConfirmation($subscriber));
         return TorneiController::message('success_message','Iscrizione effettuata con successo');
 	}
 
