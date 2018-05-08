@@ -1,0 +1,12 @@
+/* General-Footer Styles CSS EasyTemplate Sindria Inc. */
+
+
+#general-footer {
+		position: relative;
+		text-align: center;
+	}
+
+	.signature {
+		text-align: center;
+		color: inherit;
+	}

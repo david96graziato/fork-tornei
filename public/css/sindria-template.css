@@ -1,0 +1,34 @@
+/*Main tag*/
+
+body {
+	background-color: #333;
+	font-family: 'Ubuntu', sans-serif;
+	line-height: 1.7;
+	font-size: 14px;
+}
+
+/* Navbar Custom Styles */
+
+#menu-top {
+	/*text-transform: uppercase;*/
+}
+
+/* Skeleton */
+
+#master-container {
+	margin-top: 70px;
+	position: relative;
+}
+
+/* Master Index content */
+
+.home-toggle {
+	color: #fff;
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+footer {
+	color: #fff;
+}
+
