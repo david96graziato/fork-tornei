@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\WebserviceResource;
 use App\Models\Subscriber;
 use App\Models\Webservice;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\Resource;
 
 class WebserviceController extends Controller
 {
@@ -16,7 +18,7 @@ class WebserviceController extends Controller
      */
     public function index()
     {
-        return User::all();
+        //return User::all();
     }
 
     /**
@@ -44,11 +46,11 @@ class WebserviceController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Webservice  $webservice
-     * @return \Illuminate\Http\Response
+     * @return WebserviceResource
      */
     public function show($id)
     {
-        return User::find($id);
+        //return new WebserviceResource(Webservice::find($id));;
     }
 
     /**
