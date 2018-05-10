@@ -46,9 +46,9 @@ class WebserviceController extends Controller
      * @param  \App\Models\Webservice  $webservice
      * @return \Illuminate\Http\Response
      */
-    public function show(Webservice $webservice)
+    public function show($id)
     {
-
+        return User::find($id);
     }
 
     /**
