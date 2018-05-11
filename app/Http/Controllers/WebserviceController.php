@@ -3,11 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\WebserviceResource;
-use App\Models\Subscriber;
 use App\Models\Webservice;
 use App\User;
 use Illuminate\Http\Request;
-use Illuminate\Http\Resources\Json\Resource;
+use App\Http\Resources\User as UserResource;
 
 class WebserviceController extends Controller
 {

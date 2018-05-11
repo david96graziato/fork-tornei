@@ -1,6 +1,8 @@
 <?php
  use App\User;
  use App\Http\Resources\User as UserResource;
+ use App\Http\Resources\Subscriber as SubscriberResource;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -67,4 +69,8 @@ Route::post('/store', 'TorneiController@storeData')->name('subscriber.store');
 
 Route::get('/user', function () {
     return UserResource::collection(User::all());
+});
+
+Route::get('/subscriber', function () {
+    return SubscriberResource::collection(\App\Models\Subscriber::all());
 });
