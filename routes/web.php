@@ -1,4 +1,7 @@
 <?php
+ use App\User;
+ use App\Http\Resources\User as UserResource;
+ use App\Http\Resources\Subscriber as SubscriberResource;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,3 +61,16 @@ Route::group(['middleware' => 'auth', 'prefix' => '/admin'], function() {
 Route::get('/', 'TorneiController@index');
 Route::post('/store', 'TorneiController@storeData')->name('subscriber.store');
 
+//Route::resource('/webservice','WebserviceController');
+
+//Route::get('/user', function () {
+//    return new UserResource(User::find(1));
+//});
+
+Route::get('/user', function () {
+    return UserResource::collection(User::all());
+});
+
+Route::get('/subscriber', function () {
+    return SubscriberResource::collection(\App\Models\Subscriber::all());
+});
